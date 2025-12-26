@@ -1,0 +1,87 @@
+body {
+  background-image: url(assets/plufow-le-studio-ailrGVN0xNA-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 80px;
+  color: white;
+}
+
+.intro a {
+  display: flex;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-decoration: none;
+  flex-direction: column;
+  background: linear-gradient(180deg, #0071dc 0%, #23adf1 100%);
+  border: 1px solid #007ce3;
+  border-radius: 5px;
+  box-shadow: 0 3px 9px 0 rgba(0, 125, 227, 0.5);
+  color: #ffffff;
+  padding: 5px 15px;
+}
+.content {
+  display: flex;
+  padding: 0px 80px;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  flex-wrap: wrap;
+}
+.content img {
+  width: 270px;
+  height: 370px;
+  object-fit: cover;
+  overflow: hidden;
+  display: block;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: rgb(173, 170, 170);
+}
+.tex {
+    color: white;
+    padding: 0px 80px;
+}
+:root {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.tu {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-start;
+}
+h2, h4 {
+    margin: 0;
+}
+@media screen and (max-width: 480px) {
+    .container { width: 100%; padding: 0 15px; }
+    .manga-grid { grid-template-columns: repeat(2, 1fr); }
+    .nav-menu { display: none; }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .container { width: 95%; }
+    .manga-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .container { width: 90%; }
+    .manga-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    .container { max-width: 1200px; margin: 0 auto; }
+    .manga-grid { grid-template-columns: repeat(5, 1fr); }
+}
+
+@media screen and (min-width: 1441px) {
+    .container { max-width: 1600px; margin: 0 auto; }
+    .manga-grid { grid-template-columns: repeat(6, 1fr); }
+    body { font-size: 18px; }
+}
